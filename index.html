@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Centered Image and Video</title>
+    <style>
+        /* Center the image and video horizontally and vertically */
+        body {
+            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        img, video {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="a.jpg" alt="Image" />
+<br><br>
+    <!-- Add line breaks or other content here -->
+<img src="b.jpg"  />
+ <style>
+ /* Create a container div for the gradient box */
+ .gradient-container {
+ width: 300px;
+ height: 100px;
+ position: relative;
+ overflow: hidden;
+ justify-content: center;
+ align-items: center;
+ }
+ 
+ /* Apply the gradient effect using CSS animation */
+ .gradient-box {
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(45deg, #f06, #0cf, #f06);
+ background-size: 200% 200%;
+ animation: gradient-animation 4s linear infinite;
+ }
+ 
+ /* Define the animation */
+ @keyframes gradient-animation {
+ 0% {
+ background-position: 0% 50%;
+ }
+ 50% {
+ background-position: 100% 50%;
+ }
+ 100% {
+ background-position: 0% 50%;
+ }
+ }
+ </style>
+ <center>
+ <div class="gradient-container">
+ <div class="gradient-box"><center><br><h2>GANAPATHI KI JAI HO........</h2></div>
+ </div>
+ </center>
+    <br><br>
+    <video controls autoplay loop>
+        <source src="a.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+    </video>
+    <br><br>
+    <style>
+    .card {
+    background-color: grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    }
+    
+    .content {
+    display: none;
+    padding: 10px;
+    background-color: orange ;
+    border-radius: 5px;
+    margin-top: 5px;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="card" onclick="toggleContent(1)">
+    <h2>Section 1: Birth and Early Life</h2>
+    <div class="content" id="section1">
+    <p>1. Ganapathi was born to Lord Shiva and Goddess Parvati.</p>
+    <p>2. He is known for his elephant head, symbolizing wisdom.</p>
+    <p>3. His birth story involves an interesting legend.</p>
+    <p>4. Ganapathi is considered the remover of obstacles.</p>
+    <p>5. He is often worshipped before beginning any new endeavor.</p>
+    </div>
+    </div>
+    
+    <div class="card" onclick="toggleContent(2)">
+    <h2>Section 2: Significance in Hinduism</h2>
+    <div class="content" id="section2">
+    <p>1. Ganapathi is one of the most revered deities in Hinduism.</p>
+    <p>2. He is worshipped at the beginning of any religious ritual.</p>
+    <p>3. Devotees seek his blessings for success and wisdom.</p>
+    <p>4. Ganapathi's various forms are celebrated in festivals.</p>
+    <p>5. His name is invoked before important tasks and ceremonies.</p>
+    </div>
+    </div>
+    
+    <div class="card" onclick="toggleContent(3)">
+    <h2>Section 3: Symbolism and Iconography</h2>
+    <div class="content" id="section3">
+    <p>1. Ganapathi's elephant head signifies intelligence and memory.</p>
+    <p>2. He often carries a broken tusk and a modak (sweet).</p>
+    <p>3. The rat or mouse is his vehicle, representing his humility.</p>
+    <p>4. His multiple arms symbolize his abilities and powers.</p>
+    <p>5. He is depicted in various poses and forms across art and culture.</p>
+    </div>
+    </div>
+    
+    <div class="card" onclick="toggleContent(4)">
+    <h2>Section 4: Stories and Legends</h2>
+    <div class="content" id="section4">
+    <p>1. The story of how Ganapathi got his elephant head is well-known.</p>
+    <p>2. His role in protecting his mother Parvati is a popular tale.</p>
+    <p>3. Ganapathi's wisdom is demonstrated in his encounter with Kubera.</p>
+    <p>4. He's often seen as a mischievous but compassionate deity.</p>
+    <p>5. Legends surrounding Ganapathi vary across different regions.</p>
+    </div>
+    </div>
+    
+    <div class="card" onclick="toggleContent(5)">
+    <h2>Section 5: Devotion and Festivals</h2>
+    <div class="content" id="section5">
+    <p>1. Ganesh Chaturthi is a major festival dedicated to Ganapathi.</p>
+    <p>2. Devotees create clay idols and offer prayers during the festival.</p>
+    <p>3. The immersion of Ganapathi idols marks the conclusion of the festival.</p>
+    <p>4. Ganapathi is also celebrated in other festivals like Diwali.</p>
+    <p>5. His devotees include people from various backgrounds and cultures.</p>
+    </div>
+    </div>
+    
+    <script>
+    function toggleContent(sectionNumber) {
+    const content = document.getElementById(`section${sectionNumber}`);
+    if (content.style.display === "block") {
+    content.style.display = "none";
+    } else {
+    content.style.display = "block";
+    }
+    }
+    </script>
+  
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    /* Center the content */
+    .center {
+    text-align: center;
+    }
+    
+    /* Style for the black box */
+    
+    </style>
+    </head>
+    <body>
+    <div class="center">
+    <div class="black-box">
+    <!-- First video -->
+    <video autoplay controls loop>
+    <source src="b.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+    
+    <!-- Image -->
+    <br><br>
+    <img src="c.jpg" />
+    
+    <!-- Additional videos -->
+    <br><br>
+    <video autoplay controls loop>
+    <source src="c.mp4" type="video/mp4">
+    </video>
+    <br><br>
+    <video autoplay controls loop>
+    <source src="d.mp4" type="video/mp4">
+    </video>
+    <br><br>
+    <video autoplay controls loop>
+    <source src="e.mp4" type="video/mp4">
+    </video>
+    <br><br>
+    <video autoplay controls loop>
+    <source src="f.mp4" type="video/mp4">
+    </video>
+    <br><br>
+    <video autoplay controls loop>
+    <source src="a.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="black-box">
+    <div class="orange-neuro-content">
+    <p>Designed and Developed by Nandish BC</p>
+    <p>Software Developer, Tutor, Frontend Developer</p>
+    <p>Code, Design, Content Generated by ChatGPT</p>
+    <p>Special Regards for CodePen -Animated Videos collection (usimg html css)</p>
+    </div>
+    </div><style type="text/css">b {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    }
+    
+    .black-box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .orange-neuro-content {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    }
+    </style>
+   </body></html>
