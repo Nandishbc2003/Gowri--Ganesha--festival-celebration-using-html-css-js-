@@ -8,5 +8,5 @@ This GitHub repository showcases a vibrant and visually appealing Ganesha Celebr
 
 
 
-for live preview:https://replit.com/@Nandishbc2003/Ganesha-festival-celebration?s=app
+for live preview:http://ganesha-festival-celebration.nandishbc2003.repl.co/
 
